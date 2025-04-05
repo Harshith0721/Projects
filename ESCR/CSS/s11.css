@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #f8f9fa);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Wrapper */
+#wrapper {
+    width: 960px; /* Fixed width for the main container */
+    margin: 20px auto;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Menu */
+#menu {
+    background: linear-gradient(to right, #a8dadc, #f1faee);
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #457b9d;
+}
+#menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the menu items */
+}
+#menu ul li {
+    margin: 0 15px;
+}
+#menu ul li a {
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+#menu ul li a:hover {
+    color: #e63946;
+}
+
+/* Header */
+#header {
+    background: linear-gradient(to right, #f1faee, #a8dadc);
+    color: #1d3557;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Page Layout */
+#page {
+    display: flex; /* Use flexbox for layout */
+    padding: 20px;
+}
+
+/* Content */
+#content {
+    flex: 3; /* Take up more space */
+    min-width: 600px; /* Minimum width for content */
+}
+.post {
+    background: linear-gradient(to right, #ffffff, #f8f9fa);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+.table-container {
+    width: 100%; /* Full width for the container */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    margin: 20px 0; /* Margin for spacing */
+    border: 1px solid #ccc; /* Optional: border around the table */
+}
+table {
+    width: 100%; /* Full width for the table */
+    border-collapse: collapse; /* Remove space between borders */
+}
+th, td {
+    padding: 12px; /* Add padding for better spacing */
+    text-align: center; /* Align text to the center */
+    border: 1px solid #ddd; /* Border for table cells */
+}
+th {
+    background: red; /* Header background color */
+    color: white; /* Header text color */
+}
+td {
+    background: yellow; /* Cell background color */
+    font-weight: bold; /* Bold text */
+}
+
+/* Table Images */
+td img {
+    width: 50px; /* Image width */
+    height: 50px; /* Image height */
+    border-radius: 50%; /* Rounded images */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Shadow for images */
+}
+        /* Button Styles */
+        .button {
+            background-color: #1d3557; /* Dark blue background */
+            color: #ffffff; /* White text */
+            border: none; /* No border */
+            padding: 10px 20px; /* Padding for the button */
+            text-align: center; /* Centered text */
+            text-decoration: none; /* No underline */
+            display: inline-block; /* Inline-block for spacing */
+            font-size: 16px; /* Font size */
+            margin: 20px auto; /* Center the button */
+            cursor: pointer; /* Pointer cursor on hover */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        .button:hover {
+            background-color: #e63946; /* Change background on hover */
+        }
+
+/* Sidebar */
+#sidebar {
+    flex: 1; /* Take up less space */
+    max-width: 300px; /* Increased maximum width for sidebar */
+    background: linear-gradient(to right, #dff6ff, #a8dadc);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-left: 20px; /* Space between content and sidebar */
+}
+
+#sidebar ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+}
+#sidebar ul li {
+    padding: 12px 0; /* Padding for each menu item */
+    border-bottom: 1px solid #8ab6d6; /* Border between items */
+}
+#sidebar ul li:last-child {
+    border-bottom: none; /* Remove border for last item */
+}
+#sidebar ul li a {
+    display: block; /* Block display for full clickable area */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    color: #1d3557; /* Text color */
+    transition: color 0.3s ease, background 0.3s ease; /* Transition effects */
+    padding: 12px; /* Padding for links */
+    border-radius: 5px; /* Rounded corners */
+}
+#sidebar ul li a:hover {
+    color: #e63946; /* Change text color on hover */
+    background: rgba(69, 123, 157, 0.2); /* Background on hover */
+}
+
+/* Footer */
+#footer {
+    clear: both; /* Clear floats */
+    background: linear-gradient(to right, #f1faee, #a8dadc);
+    color: #1d3557; /* Text color */
+    text-align: center; /* Center text */
+    padding: 15px; /* Padding for footer */
+    margin-top: 20px; /* Margin above footer */
+    border-top: 2px solid #457b9d; /* Top border */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #page {
+        flex-direction: column; /* Stack content and sidebar vertically */
+    }
+    #sidebar {
+        width: 100%; /* Full width for sidebar */
+        margin-left: 0; /* Remove left margin */
+        margin-top: 20px; /* Margin above sidebar */
+    }
+    table {
+        font-size: 14px; /* Smaller font size for tables */
+    }
+}

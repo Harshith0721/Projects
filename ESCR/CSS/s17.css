@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #f8f9fa);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Wrapper */
+#wrapper {
+    width: 90%; /* Adjusted width for better responsiveness */
+    margin: 20px auto;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Menu */
+#menu {
+    background: linear-gradient(to right, #a8dadc, #f1faee);
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #457b9d;
+}
+#menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+#menu ul li {
+    margin: 0 15px;
+}
+#menu ul li a {
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+#menu ul li a:hover {
+    color: #e63946;
+}
+
+/* Header */
+#header {
+    background: linear-gradient(to right, #f1faee, #a8dadc);
+    color: #1d3557;
+    padding: 25px;
+    text-align: center;
+}
+#header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+/* Page Layout */
+#page {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping for better responsiveness */
+}
+
+/* Content */
+#content {
+    flex: 2; /* Take up 2 parts of the available space */
+    padding: 20px;
+}
+
+
+/* Table Styling */
+table {
+    width: 100%; /* Full width for better visibility */
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse;
+    table-layout: fixed; /* Ensure table layout consistency */
+    word-wrap: break-word; /* Handle long text */
+}
+table td, table th {
+    padding: 10px;
+    border: 1px solid #8ab6d6;
+    text-align: left;
+}
+table th {
+    background-color: #99FF99;
+    color: #2c83b0;
+}
+
+/* Button Styles */
+.button {
+    background-color: #1d3557; /* Dark blue background */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline-block for spacing */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #e63946; /* Change background on hover */
+}
+
+/* Footer */
+#footer {
+    background: linear-gradient(to right, #f1faee, #a8dadc);
+    color: #1d3557;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #wrapper {
+        width: 90%;
+    }
+    #page {
+        flex-direction: column; /* Stack content and sidebar */
+    }
+    #sidebar {
+        max-width: 100%; /* Full width for sidebar */
+        margin-top: 20px; /* Space between content and sidebar */
+    }
+    table {
+        width: 100%; /* Full width for table */
+    }
+}

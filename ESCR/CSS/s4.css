@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #f8f9fa);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Wrapper */
+#wrapper {
+    width: 960px;
+    margin: 20px auto;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Menu */
+#menu {
+    background: linear-gradient(to right, #a8dadc, #f1faee);
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: 2px solid #457b9d;
+}
+#menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+#menu ul li a {
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+#menu ul li a:hover {
+    color: #e63946;
+}
+/* Header */
+#header {
+    background: linear-gradient(to right, #f1faee, #a8dadc);
+    color: #1d3557;
+    padding: 25px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 2px solid #457b9d;
+}
+
+/* Page Content */
+#page {
+    padding: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: red;
+    color: white;
+}
+
+td {
+    background: yellow;
+    font-weight: bold;
+}
+
+/* Table Images */
+td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar */
+#sidebar {
+    float: right;
+    width: 30%;
+    background: linear-gradient(to right, #dff6ff, #a8dadc);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 12px 0;
+    border-bottom: 1px solid #8ab6d6;
+}
+
+#sidebar ul li:last-child {
+    border-bottom: none;
+}
+
+#sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1d3557;
+    transition: color 0.3s ease, background 0.3s ease;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+#sidebar ul li a:hover {
+    color: #e63946;
+    background: rgba(69, 123, 157, 0.2);
+}
+.back-button-container {
+    background-color: #1d3557; /* Dark blue background */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding for the button */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Inline-block for spacing */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin for spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #e63946; /* Change background on hover */
+}
+
+/* Footer */
+#footer {
+    clear: both;
+    background: linear-gradient(to right, #f1faee, #a8dadc);
+    color: #1d3557;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 2px solid #457b9d;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    #wrapper {
+        width: 90%;
+    }
+    #content {
+        width: 100%;
+        float: none;
+    }
+    #sidebar {
+        width: 100%;
+        float: none;
+        margin-top: 20px;
+    }
+    table {
+        font-size: 14px;
+    }
+}
